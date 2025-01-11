@@ -5,7 +5,133 @@ This repository contains a comprehensive collection of **C# interview questions*
 
 ## 🚀 Table of Contents
 
-1. [What is Angular and what are its key features?](#1-what-is-angular-and-what-are-its-key-features)
+### C# Fundamentals
+1. [What is C# and what are its key features?](#1-what-is-c-and-what-are-its-key-features)
+2. [Explain the basic structure of a C# program.](#2-explain-the-basic-structure-of-a-c-program)
+3. [What are the different types of data types available in C#?](#3-what-are-the-different-types-of-data-types-available-in-c)
+4. [What is the difference between value types and reference types?](#4-what-is-the-difference-between-value-types-and-reference-types)
+5. [What are nullable types in C#?](#5-what-are-nullable-types-in-c)
+6. [Can you describe what namespaces are and how they are used in C#?](#6-can-you-describe-what-namespaces-are-and-how-they-are-used-in-c)
+7. [Explain the concept of boxing and unboxing in C#.](#7-explain-the-concept-of-boxing-and-unboxing-in-c)
+8. [What is Type Casting and what are its types in C#?](#8-what-is-type-casting-and-what-are-its-types-in-c)
+9. [What are operators in C# and can you provide examples?](#9-what-are-operators-in-c-and-can-you-provide-examples)
+10. [What is the difference between == operator and .Equals() method?](#10-what-is-the-difference-between-operator-and-equals-method)
+11. [What is the purpose of the var keyword in C#?](#11-what-is-the-purpose-of-the-var-keyword-in-c)
+12. [What are the differences between const and readonly keywords?](#12-what-are-the-differences-between-const-and-readonly-keywords)
+13. [How does checked and unchecked context affect arithmetic operations?](#13-how-does-checked-and-unchecked-context-affect-arithmetic-operations)
+14. [What are the different ways to handle errors in C#?](#14-what-are-the-different-ways-to-handle-errors-in-c)
+15. [Explain the role of the garbage collector in .NET.](#15-explain-the-role-of-the-garbage-collector-in-net)
+
+### Object-Oriented Programming in C#
+16. [Define Object-Oriented Programming and its principles.](#16-define-object-oriented-programming-and-its-principles)
+17. [What is a class and how is it different from a struct?](#17-what-is-a-class-and-how-is-it-different-from-a-struct)
+18. [Explain the concept of inheritance and its use in C#.](#18-explain-the-concept-of-inheritance-and-its-use-in-c)
+19. [What is polymorphism, and can you give a C# example?](#19-what-is-polymorphism-and-can-you-give-a-c-example)
+20. [What is encapsulation and how is it implemented in C#?](#20-what-is-encapsulation-and-how-is-it-implemented-in-c)
+21. [What are abstract classes and interfaces, and when do you use each?](#21-what-are-abstract-classes-and-interfaces-and-when-do-you-use-each)
+22. [Can you explain what a virtual method is in C#?](#22-can-you-explain-what-a-virtual-method-is-in-c)
+23. [What is method overloading and method overriding?](#23-what-is-method-overloading-and-method-overriding)
+24. [Can you describe the base keyword?](#24-can-you-describe-the-base-keyword)
+25. [What is an access modifier and what are the different types of access modifiers?](#25-what-is-an-access-modifier-and-what-are-the-different-types-of-access-modifiers)
+
+### C# Advanced Concepts
+26. [What are indexers in C#?](#26-what-are-indexers-in-c)
+27. [Explain the concept of delegates in C#.](#27-explain-the-concept-of-delegates-in-c)
+28. [What are events and how are they different from delegates?](#28-what-are-events-and-how-are-they-different-from-delegates)
+29. [What are Lambda expressions and where would you use them?](#29-what-are-lambda-expressions-and-where-would-you-use-them)
+30. [Can you explain what extension methods are and how to use them?](#30-can-you-explain-what-extension-methods-are-and-how-to-use-them)
+31. [What are generics and how do they provide type safety?](#31-what-are-generics-and-how-do-they-provide-type-safety)
+32. [Define LINQ and mention its advantages.](#32-define-linq-and-mention-its-advantages)
+33. [What is the difference between IEnumerable and IQueryable?](#33-what-is-the-difference-between-ienumerable-and-iqueryable)
+34. [What are async and await keywords and how do they work?](#34-what-are-async-and-await-keywords-and-how-do-they-work)
+35. [What is the purpose of the using statement?](#35-what-is-the-purpose-of-the-using-statement)
+
+### C# Collections and Data Structures
+36. [What are collections in C#?](#36-what-are-collections-in-c)
+37. [What is the difference between arrays and collections?](#37-what-is-the-difference-between-arrays-and-collections)
+38. [Explain the different types of collections in .NET.](#38-explain-the-different-types-of-collections-in-net)
+39. [What is the difference between List and LinkedList?](#39-what-is-the-difference-between-list-and-linkedlist)
+40. [Can you discuss the IDictionary interface and its implementation?](#40-can-you-discuss-the-idictionary-interface-and-its-implementation)
+41. [What are HashTable and Dictionary and how do they differ?](#41-what-are-hashtable-and-dictionary-and-how-do-they-differ)
+42. [How does a C# HashSet work and what are its benefits?](#42-how-does-a-c-hashset-work-and-what-are-its-benefits)
+43. [What are Enumerable and Queryable collections?](#43-what-are-enumerable-and-queryable-collections)
+44. [When would you use a Queue vs a Stack?](#44-when-would-you-use-a-queue-vs-a-stack)
+45. [How do you sort elements in a collection?](#45-how-do-you-sort-elements-in-a-collection)
+
+### C# Exception Handling
+46. [What is exception handling and why is it necessary?](#46-what-is-exception-handling-and-why-is-it-necessary)
+47. [What are the common exception types in C#?](#47-what-are-the-common-exception-types-in-c)
+48. [How do you create custom exceptions in C#?](#48-how-do-you-create-custom-exceptions-in-c)
+49. [What is the use of the finally block?](#49-what-is-the-use-of-the-finally-block)
+50. [Can you explain exception filters introduced in C# 6?](#50-can-you-explain-exception-filters-introduced-in-c-6)
+
+### C# Asynchronous Programming
+51. [What is the Task Parallel Library (TPL)?](#51-what-is-the-task-parallel-library-tpl)
+52. [Explain the difference between synchronous and asynchronous operations.](#52-explain-the-difference-between-synchronous-and-asynchronous-operations)
+53. [How do you cancel an asynchronous operation?](#53-how-do-you-cancel-an-asynchronous-operation)
+54. [What is the difference between Task and Thread?](#54-what-is-the-difference-between-task-and-thread)
+55. [Discuss the use of the Parallel class in C#.](#55-discuss-the-use-of-the-parallel-class-in-c)
+
+### C# File I/O and Serialization
+56. [How do you read from and write to a text file in C#?](#56-how-do-you-read-from-and-write-to-a-text-file-in-c)
+57. [What are the file handling classes in C#?](#57-what-are-the-file-handling-classes-in-c)
+58. [Explain serialization and deserialization in the context of C#.](#58-explain-serialization-and-deserialization-in-the-context-of-c)
+59. [What is the difference between XML Serialization and JSON Serialization?](#59-what-is-the-difference-between-xml-serialization-and-json-serialization)
+60. [How do you use streams in C#?](#60-how-do-you-use-streams-in-c)
+
+### C# Attributes and Reflection
+61. [What are attributes in C#?](#61-what-are-attributes-in-c)
+62. [How do you define a custom attribute?](#62-how-do-you-define-a-custom-attribute)
+63. [What is reflection and why is it useful?](#63-what-is-reflection-and-why-is-it-useful)
+64. [Explain how to use reflection to inspect an assembly’s metadata.](#64-explain-how-to-use-reflection-to-inspect-an-assemblys-metadata)
+65. [How do you use reflection to create an instance of a class at runtime?](#65-how-do-you-use-reflection-to-create-an-instance-of-a-class-at-runtime)
+
+### C# Memory Management
+66. [Describe the stack and heap in .NET’s memory management.](#66-describe-the-stack-and-heap-in-dots-memory-management)
+67. [What are the finalizers in C#?](#67-what-are-the-finalizers-in-c)
+68. [How do you force a garbage collection?](#68-how-do-you-force-a-garbage-collection)
+69. [Explain the IDisposable interface and the Dispose pattern.](#69-explain-the-idisposable-interface-and-the-dispose-pattern)
+70. [What is a memory leak in .NET and how can it be prevented?](#70-what-is-a-memory-leak-in-net-and-how-can-it-be-prevented)
+
+### C# Debugging and Diagnostic
+71. [How do you debug a C# application?](#71-how-do-you-debug-a-c-application)
+72. [What are breakpoints and how are they used?](#72-what-are-breakpoints-and-how-are-they-used)
+73. [Explain the use of the Debug and Trace classes.](#73-explain-the-use-of-the-debug-and-trace-classes)
+74. [Discuss the techniques to analyze a memory dump.](#74-discuss-the-techniques-to-analyze-a-memory-dump)
+75. [How can you profile a C# application to identify performance bottlenecks?](#75-how-can-you-profile-a-c-application-to-identify-performance-bottlenecks)
+
+### C# Concurrency and Parallelism
+76. [What is a deadlock and how can it be prevented?](#76-what-is-a-deadlock-and-how-can-it-be-prevented)
+77. [Discuss the reader-writer lock pattern in C#.](#77-discuss-the-reader-writer-lock-pattern-in-c)
+78. [Explain how the lock keyword ensures thread safety.](#78-explain-how-the-lock-keyword-ensures-thread-safety)
+79. [What are Mutexes, Semaphores, and Monitors?](#79-what-are-mutexes-semaphores-and-monitors)
+80. [How do you achieve parallelism using PLINQ?](#80-how-do-you-achieve-parallelism-using-plinq)
+
+### C# Unit Testing and Test Driven Development (TDD)
+81. [What is unit testing and what frameworks do you use for it in C#?](#81-what-is-unit-testing-and-what-frameworks-do-you-use-for-it-in-c)
+82. [Explain the concept of Test-Driven Development (TDD).](#82-explain-the-concept-of-test-driven-development-tdd)
+83. [How do you mock objects in C# unit tests?](#83-how-do-you-mock-objects-in-c-unit-tests)
+84. [What are the common attributes used in a test method?](#84-what-are-the-common-attributes-used-in-a-test-method)
+85. [How do you test asynchronous code in C#?](#85-how-do-you-test-asynchronous-code-in-c)
+
+### C# Best Practices and Design Patterns
+86. [Why are SOLID principles important in C#?](#86-why-are-solid-principles-important-in-c)
+87. [Can you describe some common design patterns and their applications in C#?](#87-can-you-describe-some-common-design-patterns-and-their-applications-in-c)
+88. [How do you ensure your C# code is maintainable and readable?](#88-how-do-you-ensure-your-c-code-is-maintainable-and-readable)
+89. [What strategies do you use for error handling and exception management?](#89-what-strategies-do-you-use-for-error-handling-and-exception-management)
+90. [Discuss the concept of dependency injection and how it’s used in C#.](#90-discuss-the-concept-of-dependency-injection-and-how-its-used-in-c)
+91. [What are the new features introduced in the latest version of C#?](#91-what-are-the-new-features-introduced-in-the-latest-version-of-c)
+92. [How has pattern matching evolved in recent C# versions?](#92-how-has-pattern-matching-evolved-in-recent-c-versions)
+93. [Explain how C#8 nullable reference types work.](#93-explain-how-c-8-nullable-reference-types-work)
+94. [What is the switch expression and how does it differ from the switch statement?](#94-what-is-the-switch-expression-and-how-does-it-differ-from-the-switch-statement)
+95. [How do you take advantage of tuples in C#?](#95-how-do-you-take-advantage-of-tuples-in-c)
+
+### C# Interoperability
+96. [How can you call unmanaged code using C#?](#96-how-can-you-call-unmanaged-code-using-c)
+97. [What is the role of P/Invoke in C#?](#97-what-is-the-role-of-p-invoke-in-c)
+98. [How do you interface with COM objects in C#?](#98-how-do-you-interface-with-com-objects-in-c)
+99. [Discuss C# and .NET Core inter-platform capabilities.](#99-discuss-c-and-net-core-inter-platform-capabilities)
+100. [How is C# evolving with .NET 5 and beyond?](#100-how-is-c-evolving-with-net-5-and-beyond)
 
 
 ---
